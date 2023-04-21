@@ -2,8 +2,11 @@ services:
   db:
     image: mariadb
     environment:
-      MARIADB_ROOT_PASSWORD: root
+      MARIADB_ROOT_PASSWORD: N0wYouC4nSxckMyD!ck
     restart: always
+    volumes:
+      - /home/navid/projects/db:/config
+      - /home/navid/projects/db/data:/var/lib/mysql
     ports:
       - 3306:3306
 
